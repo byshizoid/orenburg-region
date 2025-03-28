@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Оренбургской области">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Личный кабинет -->
+    <main class="profile-main">
+        <div class="container">
+            <div class="profile-container">
+                <h2>Личный кабинет</h2>
+                <div class="profile-content">
+                    <div class="profile-info">
+                        <div class="profile-header">
+                            <h3>Информация о пользователе</h3>
+                            <button id="editProfileBtn" class="btn-edit">
+                                <i class="fas fa-edit"></i> Редактировать
+                            </button>
+                        </div>
+                        
+                        <!-- Режим просмотра -->
+                        <div id="viewMode" class="profile-view-mode">
+                            <div class="info-group">
+                                <span class="info-label">ФИО:</span>
+                                <span class="info-value" id="fullNameValue">Иванов Иван Иванович</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value" id="emailValue">ivanov@example.com</span>
+                            </div>
+                            <div class="info-group">
+                                <span class="info-label">Телефон:</span>
+                                <span class="info-value" id="phoneValue">+7 (999) 123-45-67</span>
+                            </div>
+                        </div>
+
+                        <!-- Режим редактирования (скрыт по умолчанию) -->
+                        <form class="profile-form" id="profileForm" style="display: none;">
+                            <div class="form-group">
+                                <label for="fullName">ФИО</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn-submit">Сохранить</button>
+                                <button type="button" class="btn-cancel" id="cancelEditBtn">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="profile-sections">
+                        <div class="profile-section">
+                            <h3>История посещений</h3>
+                            <div class="visit-history">
+                                <div class="visit-item">
+                                    <span class="visit-date">12.03.2024</span>
+                                    <span class="visit-place">Бузулукский бор</span>
+                                    <a href="#" class="visit-details">Подробнее</a>
+                                </div>
+                                <div class="visit-item">
+                                    <span class="visit-date">05.03.2024</span>
+                                    <span class="visit-place">Шайтан-тау</span>
+                                    <a href="#" class="visit-details">Подробнее</a>
+                                </div>
+                            </div>
+                            <a href="history.html" class="btn-more">Показать все</a>
+                        </div>
+
+                        <div class="profile-section">
+                            <h3>Разрешения</h3>
+                            <div class="permits-list">
+                                <div class="permit-item">
+                                    <span class="permit-status approved">Одобрено</span>
+                                    <span class="permit-place">Оренбургский заповедник</span>
+                                    <span class="permit-date">Действует до: 20.04.2024</span>
+                                </div>
+                                <div class="permit-item">
+                                    <span class="permit-status pending">На рассмотрении</span>
+                                    <span class="permit-place">Бузулукский бор</span>
+                                    <span class="permit-date">Подано: 15.03.2024</span>
+                                </div>
+                            </div>
+                            <a href="permit.html" class="btn-more">Подать заявку</a>
+                        </div>
+                    </div>
+
+                    <div class="profile-actions">
+                        <button id="logoutBtn" class="btn-logout">
+                            <i class="fas fa-sign-out-alt"></i> Выйти
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html> 

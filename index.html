@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оренбургская область - официальный сайт</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Добавляем API Яндекс.Карт -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ_api&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип Оренбургской области">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция о доверии -->
+    <section class="trust-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="videos/orenburg.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="trust-content">
+                <h2>Добро пожаловать в Оренбургскую область</h2>
+                <p class="trust-description">Откройте для себя красоту и богатство нашего края</p>
+                <div class="trust-features">
+                    <div class="trust-feature">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Уникальная природа</h3>
+                        <p>Заповедные места и природные памятники</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-history"></i>
+                        <h3>Богатая история</h3>
+                        <p>Культурное наследие и традиции</p>
+                    </div>
+                    <div class="trust-feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Гостеприимство</h3>
+                        <p>Теплый прием и комфортный отдых</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сезонные предложения -->
+    <section class="seasonal-offers">
+        <div class="container">
+            <h2>Сезонные предложения</h2>
+            <div class="offers-grid">
+                <!-- Карточка предложения 1 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="images/offers/offer1.jpg" alt="Бузулукский бор">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Весенние экскурсии по Бузулукскому бору</h3>
+                        <p>Исследуйте красоту весенней природы, насладитесь ароматом цветущих растений и пением птиц в одном из самых живописных мест Оренбуржья.</p>
+                        <div class="offer-map" id="map1"></div>
+                        <div class="offer-actions">
+                            <button class="btn-details">Подробнее</button>
+                            <a href="booking.html?tour=Весенние экскурсии по Бузулукскому бору" class="btn-book">Забронировать</a>
+                        </div>
+                        <div class="tour-agency">
+                            <p>Предложение от: "ОренбургТур"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка предложения 2 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="images/offers/offer2.jpg" alt="Шайтан-тау">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Летний поход на Шайтан-тау</h3>
+                        <p>Покорите одну из самых высоких вершин Оренбургской области, насладитесь панорамными видами и откройте для себя уникальную флору и фауну.</p>
+                        <div class="offer-map" id="map2"></div>
+                        <div class="offer-actions">
+                            <button class="btn-details">Подробнее</button>
+                            <a href="booking.html?tour=Летний поход на Шайтан-тау" class="btn-book">Забронировать</a>
+                        </div>
+                        <div class="tour-agency">
+                            <p>Предложение от: "ПриродаОренбуржья"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка предложения 3 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="images/offers/offer3.jpg" alt="Оренбургский заповедник">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Осенняя фотоохота в заповеднике</h3>
+                        <p>Запечатлейте красоту осенней природы, понаблюдайте за дикими животными и сделайте уникальные фотографии в естественной среде обитания.</p>
+                        <div class="offer-map" id="map3"></div>
+                        <div class="offer-actions">
+                            <button class="btn-details">Подробнее</button>
+                            <a href="booking.html?tour=Осенняя фотоохота в заповеднике" class="btn-book">Забронировать</a>
+                        </div>
+                        <div class="tour-agency">
+                            <p>Предложение от: "ФотоТур"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

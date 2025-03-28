@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Производства - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Оренбургской области">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Каталог производств -->
+    <main class="catalog-main">
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Производства Оренбургской области</h1>
+                <div class="catalog-filters">
+                    <input type="text" id="searchInput" placeholder="Поиск по производствам...">
+                    <select id="industryFilter">
+                        <option value="">Все отрасли</option>
+                        <option value="oil">Нефтегазовая</option>
+                        <option value="metallurgy">Металлургия</option>
+                        <option value="agriculture">Сельское хозяйство</option>
+                        <option value="food">Пищевая промышленность</option>
+                        <option value="machine">Машиностроение</option>
+                    </select>
+                    <select id="locationFilter">
+                        <option value="">Все населенные пункты</option>
+                        <option value="orenburg">Оренбург</option>
+                        <option value="orsk">Орск</option>
+                        <option value="novotroitsk">Новотроицк</option>
+                        <!-- Добавьте другие населенные пункты -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog-grid" id="industriesGrid">
+                <!-- Карточка производства 1 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/gazprom.jpg" alt="Газпром добыча Оренбург">
+                    </div>
+                    <div class="item-content">
+                        <h3>Газпром добыча Оренбург</h3>
+                        <p class="item-type">Нефтегазовая отрасль</p>
+                        <p class="item-description">Крупнейшее газодобывающее предприятие Оренбургской области, специализирующееся на добыче и переработке природного газа.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Оренбург</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1974</p>
+                        </div>
+                        <a href="industry-details.html?id=gazprom" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 2 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/orsk.jpg" alt="Орский завод металлоконструкций">
+                    </div>
+                    <div class="item-content">
+                        <h3>Орский завод металлоконструкций</h3>
+                        <p class="item-type">Металлургия</p>
+                        <p class="item-description">Ведущее предприятие по производству металлоконструкций для строительства и промышленности.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Орск</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1958</p>
+                        </div>
+                        <a href="industry-details.html?id=orsk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 3 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/novotroitsk-metall.jpg" alt="Новотроицкий металлургический комбинат">
+                    </div>
+                    <div class="item-content">
+                        <h3>Новотроицкий металлургический комбинат</h3>
+                        <p class="item-type">Металлургия</p>
+                        <p class="item-description">Один из крупнейших металлургических комбинатов России, производящий сталь и прокат.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Новотроицк</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1945</p>
+                        </div>
+                        <a href="industry-details.html?id=novotroitsk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 4 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/gai-gok.jpg" alt="Гайский ГОК">
+                    </div>
+                    <div class="item-content">
+                        <h3>Гайский горно-обогатительный комбинат</h3>
+                        <p class="item-type">Горнодобывающая промышленность</p>
+                        <p class="item-description">Крупнейшее предприятие по добыче и обогащению медных руд в России.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Гай</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1959</p>
+                        </div>
+                        <a href="industry-details.html?id=gai" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 5 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/orenburg-milk.jpg" alt="Оренбургский молочный комбинат">
+                    </div>
+                    <div class="item-content">
+                        <h3>Оренбургский молочный комбинат</h3>
+                        <p class="item-type">Пищевая промышленность</p>
+                        <p class="item-description">Крупное предприятие по переработке молока и производству молочной продукции.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Оренбург</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1965</p>
+                        </div>
+                        <a href="industry-details.html?id=orenburg_milk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 6 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/buzuluk-oil.jpg" alt="Бузулукский нефтеперерабатывающий завод">
+                    </div>
+                    <div class="item-content">
+                        <h3>Бузулукский нефтеперерабатывающий завод</h3>
+                        <p class="item-type">Нефтегазовая отрасль</p>
+                        <p class="item-description">Предприятие по переработке нефти и производству нефтепродуктов.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Бузулук</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1968</p>
+                        </div>
+                        <a href="industry-details.html?id=buzuluk_oil" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 7 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/orsk-mash.jpg" alt="Орский машиностроительный завод">
+                    </div>
+                    <div class="item-content">
+                        <h3>Орский машиностроительный завод</h3>
+                        <p class="item-type">Машиностроение</p>
+                        <p class="item-description">Производство оборудования для нефтегазовой и горнодобывающей промышленности.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Орск</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1941</p>
+                        </div>
+                        <a href="industry-details.html?id=orsk_mash" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка производства 8 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/industries/sorochinsk-grain.jpg" alt="Сорочинский элеватор">
+                    </div>
+                    <div class="item-content">
+                        <h3>Сорочинский элеватор</h3>
+                        <p class="item-type">Сельское хозяйство</p>
+                        <p class="item-description">Крупное предприятие по хранению и переработке зерна.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Расположение: Сорочинск</p>
+                            <p><i class="fas fa-industry"></i> Год основания: 1952</p>
+                        </div>
+                        <a href="industry-details.html?id=sorochinsk_grain" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-content">
+            <!-- ... existing code ... -->
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html> 

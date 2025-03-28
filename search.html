@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="Логотип" class="logo-img">
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="settlements.html">Населенные пункты</a></li>
+                    <li><a href="industries.html">Производства</a></li>
+                    <li><a href="search.html" class="active">Поиск</a></li>
+                    <li class="profile-btn"><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="search-page">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-filters">
+                    <h2>Фильтры поиска</h2>
+                    <form id="searchForm">
+                        <div class="filter-group">
+                            <label for="searchQuery">Поисковый запрос</label>
+                            <input type="text" id="searchQuery" placeholder="Введите текст для поиска">
+                        </div>
+                        <div class="filter-group">
+                            <label for="category">Категория</label>
+                            <select id="category">
+                                <option value="">Все категории</option>
+                                <option value="settlements">Населенные пункты</option>
+                                <option value="industries">Производства</option>
+                                <option value="attractions">Достопримечательности</option>
+                                <option value="reserves">Заповедные зоны</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="location">Местоположение</label>
+                            <select id="location">
+                                <option value="">Все районы</option>
+                                <option value="orenburg">Оренбург</option>
+                                <option value="orsk">Орск</option>
+                                <option value="novotroitsk">Новотроицк</option>
+                                <!-- Добавить остальные города -->
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Поиск</button>
+                    </form>
+                </div>
+
+                <div class="search-results">
+                    <div class="results-header">
+                        <h2>Результаты поиска</h2>
+                        <div class="results-sort">
+                            <select id="sortResults">
+                                <option value="relevance">По релевантности</option>
+                                <option value="popularity">По популярности</option>
+                                <option value="rating">По рейтингу</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="searchResults" class="results-grid">
+                        <!-- Результаты будут добавляться динамически -->
+                    </div>
+                    <div class="pagination">
+                        <button class="prev-page">Предыдущая</button>
+                        <span class="page-numbers">1 2 3 4 5</span>
+                        <button class="next-page">Следующая</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Оренбургская область. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html> 

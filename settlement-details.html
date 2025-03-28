@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Населенный пункт - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Оренбургской области">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Детальная информация о населенном пункте -->
+    <main class="details-main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / 
+                <a href="settlements.html">Населенные пункты</a> / 
+                <span id="settlementName">Оренбург</span>
+            </div>
+
+            <div class="details-content">
+                <div class="details-header">
+                    <div class="details-gallery">
+                        <div class="main-image">
+                            <img src="" alt="" id="mainImage">
+                        </div>
+                        <div class="gallery-thumbs">
+                            <img src="" alt="" class="thumb active" data-index="0">
+                            <img src="" alt="" class="thumb" data-index="1">
+                            <img src="" alt="" class="thumb" data-index="2">
+                            <img src="" alt="" class="thumb" data-index="3">
+                        </div>
+                    </div>
+                    <div class="details-info">
+                        <h1 id="settlementTitle">Оренбург</h1>
+                        <p class="settlement-type" id="settlementType">Город</p>
+                        <div class="settlement-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>Население: <strong id="settlementPopulation">572 188</strong></span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Район: <strong id="settlementDistrict">Оренбургский</strong></span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Год основания: <strong id="settlementFounded">1743</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sections">
+                    <section class="details-section">
+                        <h2>Описание</h2>
+                        <p id="settlementDescription">Оренбург - административный центр Оренбургской области, крупный промышленный и культурный центр. Город расположен на реке Урал, в месте впадения в неё реки Сакмары. Оренбург является важным транспортным узлом, через который проходят железнодорожные и автомобильные магистрали федерального значения.</p>
+                    </section>
+
+                    <section class="details-section">
+                        <h2>История</h2>
+                        <p id="settlementHistory">Оренбург был основан в 1743 году как крепость для защиты юго-восточных границ Российской империи. В XVIII-XIX веках город был важным торговым центром между Европой и Азией. В советский период Оренбург стал крупным промышленным центром, особенно после открытия месторождений природного газа.</p>
+                    </section>
+
+                    <section class="details-section">
+                        <h2>Экономика</h2>
+                        <div class="economy-info" id="settlementEconomy">
+                            <p>Основные отрасли экономики:</p>
+                            <ul>
+                                <li>Нефтегазовая промышленность</li>
+                                <li>Машиностроение</li>
+                                <li>Пищевая промышленность</li>
+                                <li>Строительство</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="details-section">
+                        <h2>Достопримечательности</h2>
+                        <div class="attractions-grid" id="settlementAttractions">
+                            <div class="attraction-card">
+                                <img src="images/attractions/orenburg-pedestrian.jpg" alt="Пешеходный мост">
+                                <h3>Пешеходный мост</h3>
+                                <p>Символ города, соединяющий Европу и Азию</p>
+                            </div>
+                            <div class="attraction-card">
+                                <img src="images/attractions/orenburg-drama.jpg" alt="Драматический театр">
+                                <h3>Драматический театр</h3>
+                                <p>Один из старейших театров России</p>
+                            </div>
+                            <div class="attraction-card">
+                                <img src="images/attractions/orenburg-museum.jpg" alt="Краеведческий музей">
+                                <h3>Краеведческий музей</h3>
+                                <p>Крупнейший музей области</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="details-section">
+                        <h2>Транспорт</h2>
+                        <div class="transport-info" id="settlementTransport">
+                            <p>В городе развита сеть общественного транспорта:</p>
+                            <ul>
+                                <li>Троллейбусы</li>
+                                <li>Автобусы</li>
+                                <li>Маршрутные такси</li>
+                            </ul>
+                            <p>Междугороднее сообщение:</p>
+                            <ul>
+                                <li>Железнодорожный вокзал</li>
+                                <li>Международный аэропорт</li>
+                                <li>Автовокзал</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html> 

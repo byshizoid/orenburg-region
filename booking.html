@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование тура - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип Оренбургской области">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <div class="booking-form">
+            <h1>Бронирование тура</h1>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="tourName">Название тура</label>
+                    <input type="text" id="tourName" name="tourName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tourDate">Дата тура</label>
+                    <input type="date" id="tourDate" name="tourDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="participants">Количество участников</label>
+                    <input type="number" id="participants" name="participants" min="1" max="20" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Комментарии</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-book">Забронировать</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html> 

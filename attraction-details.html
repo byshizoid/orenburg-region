@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательность - Оренбургская область</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="settlements.html">Населенные пункты</a></li>
+                    <li><a href="attractions.html" class="active">Достопримечательности</a></li>
+                    <li><a href="industries.html">Промышленность</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="details-main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="attractions.html">Достопримечательности</a> /
+                <span id="currentPage">Загрузка...</span>
+            </div>
+
+            <div class="details-content">
+                <div class="details-header">
+                    <div class="details-gallery">
+                        <div class="main-image">
+                            <img id="mainImage" src="" alt="">
+                        </div>
+                        <div class="gallery-thumbs" id="galleryThumbs">
+                            <!-- Миниатюры будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                    <div class="details-info">
+                        <h1 id="attractionName"></h1>
+                        <div class="attraction-type" id="attractionType"></div>
+                        <div class="attraction-stats" id="attractionStats">
+                            <!-- Статистика будет добавлена через JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-sections">
+                    <div class="details-section">
+                        <h2>Описание</h2>
+                        <div id="attractionDescription"></div>
+                    </div>
+
+                    <div class="details-section">
+                        <h2>Особенности</h2>
+                        <div id="attractionFeatures">
+                            <!-- Особенности будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="details-section">
+                        <h2>Как добраться</h2>
+                        <div id="attractionLocation">
+                            <!-- Информация о местоположении будет добавлена через JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="details-section">
+                        <h2>Другие достопримечательности города</h2>
+                        <div class="attractions-list" id="nearbyAttractions">
+                            <!-- Похожие достопримечательности будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: info@orenburg-region.ru</p>
+                    <p>Телефон: +7 (3532) 123-456</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="sitemap.html">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/attraction-details.js"></script>
+</body>
+</html> 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Населенные пункты - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Оренбургской области">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Каталог населенных пунктов -->
+    <main class="catalog-main">
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Населенные пункты Оренбургской области</h1>
+                <div class="catalog-filters">
+                    <input type="text" id="searchInput" placeholder="Поиск по населенным пунктам...">
+                    <select id="typeFilter">
+                        <option value="">Все типы</option>
+                        <option value="city">Города</option>
+                        <option value="town">Поселки городского типа</option>
+                        <option value="village">Сельские населенные пункты</option>
+                    </select>
+                    <select id="districtFilter">
+                        <option value="">Все районы</option>
+                        <option value="orenburg">Оренбургский район</option>
+                        <option value="buzuluk">Бузулукский район</option>
+                        <option value="orsk">Орский район</option>
+                        <!-- Добавьте другие районы -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog-grid" id="settlementsGrid">
+                <!-- Карточка населенного пункта 1 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/orenburg.jpg" alt="Оренбург">
+                    </div>
+                    <div class="item-content">
+                        <h3>Оренбург</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Административный центр Оренбургской области, крупный промышленный и культурный центр.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 572 188</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Оренбургский</p>
+                        </div>
+                        <a href="settlement-details.html?id=orenburg" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 2 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/buzuluk.jpg" alt="Бузулук">
+                    </div>
+                    <div class="item-content">
+                        <h3>Бузулук</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Город в Оренбургской области, известный своей исторической архитектурой и природными достопримечательностями.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 86 050</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Бузулукский</p>
+                        </div>
+                        <a href="settlement-details.html?id=buzuluk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 3 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/orsk.jpg" alt="Орск">
+                    </div>
+                    <div class="item-content">
+                        <h3>Орск</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Второй по численности населения город области, крупный промышленный центр с развитой металлургией.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 189 195</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Орский</p>
+                        </div>
+                        <a href="settlement-details.html?id=orsk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 4 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/novotroitsk.jpg" alt="Новотроицк">
+                    </div>
+                    <div class="item-content">
+                        <h3>Новотроицк</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Город металлургов, основанный в связи с разработкой Халиловского месторождения железных руд.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 87 517</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Новотроицкий</p>
+                        </div>
+                        <a href="settlement-details.html?id=novotroitsk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 5 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/gai.jpg" alt="Гай">
+                    </div>
+                    <div class="item-content">
+                        <h3>Гай</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Город горняков, основанный в связи с разработкой Гайского медно-колчеданного месторождения.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 37 621</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Гайский</p>
+                        </div>
+                        <a href="settlement-details.html?id=gai" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 6 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/sorochinsk.jpg" alt="Сорочинск">
+                    </div>
+                    <div class="item-content">
+                        <h3>Сорочинск</h3>
+                        <p class="item-type">Город</p>
+                        <p class="item-description">Город в Оренбургской области, известный своей историей и культурными традициями.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 27 842</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Сорочинский</p>
+                        </div>
+                        <a href="settlement-details.html?id=sorochinsk" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 7 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/kvarkeno.jpg" alt="Кваркено">
+                    </div>
+                    <div class="item-content">
+                        <h3>Кваркено</h3>
+                        <p class="item-type">Поселок городского типа</p>
+                        <p class="item-description">Административный центр Кваркенского района, расположенный в живописной степной местности.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 5 234</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Кваркенский</p>
+                        </div>
+                        <a href="settlement-details.html?id=kvarkeno" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Карточка населенного пункта 8 -->
+                <div class="catalog-item">
+                    <div class="item-image">
+                        <img src="images/settlements/tyulgan.jpg" alt="Тюльган">
+                    </div>
+                    <div class="item-content">
+                        <h3>Тюльган</h3>
+                        <p class="item-type">Поселок городского типа</p>
+                        <p class="item-description">Административный центр Тюльганского района, окруженный живописными горами.</p>
+                        <div class="item-details">
+                            <p><i class="fas fa-users"></i> Население: 9 876</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Район: Тюльганский</p>
+                        </div>
+                        <a href="settlement-details.html?id=tyulgan" class="btn-details">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-content">
+            <!-- ... existing code ... -->
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html> 

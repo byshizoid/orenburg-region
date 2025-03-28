@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности - Оренбургская область</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/attractions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Оренбургской области">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="attractions.html" class="active">Достопримечательности</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="settlements.html">Населенные пункты</a></li>
+                        <li><a href="industries.html">Производства</a></li>
+                        <li><a href="profile.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="container attractions-container">
+            <section class="attractions">
+                <h1>Достопримечательности Оренбургской области</h1>
+                <p class="subtitle">Откройте для себя уникальные места и культурное наследие нашего региона</p>
+
+                <!-- Фильтры -->
+                <div class="filters">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Поиск достопримечательностей...">
+                    </div>
+                    <div class="filter-options">
+                        <select id="cityFilter" class="filter-select">
+                            <option value="">Все города</option>
+                            <option value="Оренбург">Оренбург</option>
+                            <option value="Орск">Орск</option>
+                            <option value="Новотроицк">Новотроицк</option>
+                            <option value="Гай">Гай</option>
+                        </select>
+                        <select id="typeFilter" class="filter-select">
+                            <option value="">Все типы</option>
+                            <option value="Архитектура">Архитектура</option>
+                            <option value="Культура">Культура</option>
+                            <option value="Музей">Музей</option>
+                            <option value="Парк">Парк</option>
+                            <option value="Природа">Природа</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Сетка достопримечательностей -->
+                <div class="attractions-grid" id="attractionsGrid">
+                    <!-- Карточки достопримечательностей будут добавлены через JavaScript -->
+                </div>
+
+                <!-- Сообщение об отсутствии результатов -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Ничего не найдено</h3>
+                    <p>Попробуйте изменить параметры поиска</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <p>Телефон: 8 (800) 110-10-10</p>
+                    <p>Email: info@orenburg-region.ru</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+                <div class="footer__sitemap">
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/attractions.js"></script>
+</body>
+</html> 
